@@ -13,3 +13,7 @@ mythanks.ru:8443 {
 :80 {
     respond "Hello, all!"
 }
+
+{
+    debug
+}
