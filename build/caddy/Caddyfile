@@ -1,3 +1,7 @@
+{
+    debug
+}
+
 mythanks.ru:80 {
     respond "Hello, mythanks.ru!"
 }
@@ -12,8 +16,4 @@ mythanks.ru:8443 {
 
 :80 {
     respond "Hello, all!"
-}
-
-{
-    debug
 }
