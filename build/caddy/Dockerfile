@@ -1,3 +1,3 @@
 FROM caddy:2.3.0-alpine
 
-COPY Caddyfile /etc/caddy/Caddyfile
+COPY ./build/caddy/Caddyfile /etc/caddy/Caddyfile
