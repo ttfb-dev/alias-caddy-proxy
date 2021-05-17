@@ -6,6 +6,10 @@ mythanks.ru:443 {
     respond "Hello, secure mythanks.ru!"
 }
 
+mythanks.ru:8443 {
+    respond "Hello, socket mythanks.ru!"
+}
+
 :80 {
     respond "Hello, all!"
 }
