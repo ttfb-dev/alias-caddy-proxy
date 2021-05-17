@@ -5,17 +5,21 @@ networks:
     external:
       name: network
 
+
+volumes:
+  ssl:
+
 services:
-  proxy-nginx:
-    container_name: proxy-nginx
+  proxy-caddy:
+    container_name: proxy-caddy
     build:
       context: ./
-      dockerfile: build/nginx/Dockerfile
-    image: registry.gitlab.com/nastavnichestvo/n-nginx:1.13.7-alpine
+      dockerfile: build/caddy/Dockerfile
+    image: registry.gitlab.com/aliasgame/caddy-proxy:2.3.0
     restart: "always"
     ports:
-      - 80:80
-      - 443:443
       - 8443:8443
+      - 443:443
+      - 80:80
     volumes:
-      - /etc/ssl/:/etc/ssl
+      - ssl:/etc/ssl

@@ -10,10 +10,7 @@ build_images:
     only:
         - master
     script:
-        - pwd
-        - whoami
-        - groups
-        # - ./build/run-build
-        # - ./build/run
+        - ./build/run-build
+        - ./build/run
     tags:
         - production
