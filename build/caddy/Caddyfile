@@ -7,7 +7,7 @@ mythanks.ru:443 {
 }
 
 mythanks.ru:8443 {
-    proxy http://logger-database-clickhouse:8123
+    reverse_proxy http://logger-database-clickhouse:8123
 }
 
 :80 {
