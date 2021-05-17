@@ -1,5 +1,5 @@
-api.alias.ttfb.dev {
-    respond "Hello, api.alias.ttfb.dev!"
+alias.ttfb.dev {
+    respond "Hello, alias.ttfb.dev!"
 }
 
 :80 {
