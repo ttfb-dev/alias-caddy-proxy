@@ -11,6 +11,8 @@ build_images:
         - master
     script:
         - pwd
+        - whoami
+        - groups
         # - ./build/run-build
         # - ./build/run
     tags:
