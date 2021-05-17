@@ -1,0 +1,11 @@
+#!/bin/sh
+set -e
+
+docker-compose pull
+
+docker network create network || true
+
+export COMPOSE_FILE=docker-compose.yml
+export COMPOSE_PROJECT_NAME==n-nginx
+
+docker-compose up -d --force-recreate --remove-orphans

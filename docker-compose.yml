@@ -1,0 +1,21 @@
+version: "3.6"
+
+networks:
+  default:
+    external:
+      name: network
+
+services:
+  proxy-nginx:
+    container_name: proxy-nginx
+    build:
+      context: ./
+      dockerfile: build/nginx/Dockerfile
+    image: registry.gitlab.com/nastavnichestvo/n-nginx:1.13.7-alpine
+    restart: "always"
+    ports:
+      - 80:80
+      - 443:443
+      - 8443:8443
+    volumes:
+      - /etc/ssl/:/etc/ssl
