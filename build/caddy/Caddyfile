@@ -1,7 +1,3 @@
-api.alias.ttfb.dev:443 {
-    respond "Hello, secure world!"
-}
-
 api.alias.ttfb.dev:80 {
     respond "Hello, world!"
 }
