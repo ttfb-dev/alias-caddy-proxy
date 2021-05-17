@@ -6,6 +6,6 @@ docker-compose pull
 docker network create network || true
 
 export COMPOSE_FILE=docker-compose.yml
-export COMPOSE_PROJECT_NAME==n-nginx
+export COMPOSE_PROJECT_NAME=caddy-proxy
 
 docker-compose up -d --force-recreate --remove-orphans

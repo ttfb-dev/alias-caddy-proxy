@@ -1,3 +1,7 @@
-api.alias.ttfb.dev:80 {
-    respond "Hello, world!"
+api.alias.ttfb.dev {
+    respond "Hello, api.alias.ttfb.dev!"
+}
+
+:80 {
+    respond "Hello, all!"
 }
