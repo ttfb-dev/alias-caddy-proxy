@@ -7,9 +7,7 @@ mythanks.ru:8443 {
 }
 
 mythanks.ru:443 {
-    reverse_proxy logux-proxy:31337 {
-        websocket
-    }
+    reverse_proxy logux-proxy:31337
 }
 
 :80 {
