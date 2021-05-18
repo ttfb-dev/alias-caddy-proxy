@@ -20,7 +20,5 @@ services:
     ports:
       - 31337:31337
       - 8443:8443
-      - 443:443
-      - 80:80
     volumes:
       - ssl:/etc/ssl
