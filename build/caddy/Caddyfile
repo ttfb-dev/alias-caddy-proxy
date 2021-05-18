@@ -2,20 +2,13 @@
     debug
 }
 
-mythanks.ru:80 {
-    respond "Hello, mythanks.ru!"
-}
-
-mythanks.ru:443 {
-    respond "Hello, secure mythanks.ru!"
-}
-
 mythanks.ru:8443 {
     reverse_proxy logger-database-clickhouse:8123
 }
 
-wss://mythanks.ru:31337 {
+mythanks.ru:443 {
     reverse_proxy ws://logux-proxy:31337
+    import cors *
 }
 
 :80 {
