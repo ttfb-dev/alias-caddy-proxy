@@ -8,7 +8,6 @@ mythanks.ru:8443 {
 
 mythanks.ru:443 {
     reverse_proxy ws://logux-proxy:31337
-    import cors *
 }
 
 :80 {
