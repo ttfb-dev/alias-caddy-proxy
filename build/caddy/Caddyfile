@@ -14,6 +14,10 @@ mythanks.ru:8443 {
     reverse_proxy logger-database-clickhouse:8123
 }
 
+wss://mythanks.ru:31337 {
+    reverse_proxy ws://logux-proxy:31337
+}
+
 :80 {
     respond "Hello, all!"
 }
