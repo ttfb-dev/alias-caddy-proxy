@@ -10,6 +10,10 @@ mythanks.ru:443 {
     reverse_proxy logux-proxy:31337
 }
 
+vk-group.mythanks.ru:443 {
+    reverse_proxy vk-group-backend:80
+}
+
 :80 {
     respond "Hello, all!"
 }
