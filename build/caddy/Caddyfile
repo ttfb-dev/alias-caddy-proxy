@@ -11,7 +11,7 @@ mythanks.ru:443 {
 }
 
 miniapp.mythanks.ru:443 {
-    reverse_proxy vk-miniapp-frontend:80
+    reverse_proxy vk-miniapp-nginx:80
 }
 
 vk-group.mythanks.ru:443 {
