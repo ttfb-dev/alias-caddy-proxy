@@ -10,6 +10,10 @@ mythanks.ru:443 {
     reverse_proxy logux-proxy:31337
 }
 
+api.mythanks.ru:443 {
+    reverse_proxy logux-proxy:80
+}
+
 miniapp.mythanks.ru:443 {
     reverse_proxy vk-miniapp-nginx:80
 }
