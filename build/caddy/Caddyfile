@@ -22,6 +22,10 @@ vk-group.mythanks.ru:443 {
     reverse_proxy vk-group-backend:80
 }
 
+ttfb.dev:443 {
+    reverse_proxy ttfb-landing-nginx:80
+}
+
 :80 {
     respond "Hello, all!"
 }
