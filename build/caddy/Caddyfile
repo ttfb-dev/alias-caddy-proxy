@@ -14,6 +14,10 @@ api.mythanks.ru:443 {
     reverse_proxy logux-proxy:80
 }
 
+tg-stat.mythanks.ru:443 {
+    reverse_proxy tg-statlog-bot:80
+}
+
 miniapp.mythanks.ru:443 {
     reverse_proxy vk-miniapp-nginx:80
 }
