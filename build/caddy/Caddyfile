@@ -26,6 +26,30 @@ vk-group.mythanks.ru:443 {
     reverse_proxy vk-group-backend:80
 }
 
+alias-game.ru:8443 {
+    reverse_proxy logger-database-clickhouse:8123
+}
+
+alias-game.ru:443 {
+    reverse_proxy logux-proxy:31337
+}
+
+api.alias-game.ru:443 {
+    reverse_proxy logux-proxy:80
+}
+
+tg-stat.alias-game.ru:443 {
+    reverse_proxy tg-statlog-bot:80
+}
+
+miniapp.alias-game.ru:443 {
+    reverse_proxy vk-miniapp-nginx:80
+}
+
+vk-group.alias-game.ru:443 {
+    reverse_proxy vk-group-backend:80
+}
+
 ttfb.dev:443 {
     reverse_proxy ttfb-landing-nginx:80
 }
