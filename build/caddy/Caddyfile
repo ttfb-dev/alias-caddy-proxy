@@ -2,10 +2,6 @@
     debug
 }
 
-alias-game.ru:8443 {
-    reverse_proxy logger-database-clickhouse:8123
-}
-
 alias-game.ru:443 {
     reverse_proxy logux-proxy:31337
 }
